@@ -1,0 +1,5 @@
+include ':libvlc-null-3.3.4'
+include ':libvlc-android'
+include ':libFragment'
+include ':static_tv'
+rootProject.name = "StaticVLCPlayer"

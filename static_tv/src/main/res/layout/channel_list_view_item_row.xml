@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/epg_channel_layout_height"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:padding="10dp"
+    android:id="@+id/parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingEnd="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:paddingEnd="10dp"
+        android:textColor="@android:color/white"
+        android:ellipsize="marquee"
+        android:layout_marginBottom="2dp"
+        android:marqueeRepeatLimit="1"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>
